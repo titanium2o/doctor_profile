@@ -1,0 +1,844 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html,body{
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        font-family: 'Alata', sans-serif;
+    }
+    
+    #background{
+        position: relative;
+        width: 100%;
+        height: 1350px;
+        background-color: #dcdde1;
+    }
+    
+    #nav{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        background-color: white;
+    
+    }
+    
+    #logo{
+        padding-left: 20px;
+    }
+    
+    #nav h1{
+        font-size: 26px;
+        margin-left: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 200;
+    }
+    
+    #search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-left: 150px;
+        border: 0.2px solid gray;
+    }
+    
+    #searchbar{
+        border: none;
+        padding: 0px 15px;
+        width: 160px;
+        height: 30px;
+    }
+    
+    #searchbtn{
+        border: none;
+        margin-left: -5px;
+        width: 60px;
+        height: 30px;
+    }
+    
+    #elements{
+        position: absolute;
+        left: 70%;
+        width: 400px;
+        height: 30px;
+        margin-right: 0;
+    }
+    
+    #elements svg{
+        margin-left: 27px;
+    }
+    
+    #bg2{
+        display: flex;
+        width: 100vw;
+        height: 91.7%;
+        
+    }
+    
+    #sidebar{
+        width: 242px;
+        height: 100%;
+        background-color: #cbcbcc;
+    }
+    #arrow{
+        left: -9%;
+        position: relative;
+    }
+    
+    #doctor{
+        position: absolute;
+        right: 0;
+        width: 80.4%;
+        height: 10vh;
+    }
+    
+    #profile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 0px;
+        width: 300px;
+        height: 100%;
+        color: rgb(98, 96, 96);
+        position: absolute;
+        left: 2%;
+    }
+    
+    #profile a{
+        color: gray;
+    }
+    
+    #profile svg{
+        margin-right: 10px;
+    }
+    
+    #profile h3{
+        font-size: 20px;
+    }
+    
+    
+    #visits{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        position: absolute;
+        top: 10%;
+        right: 4%;
+        width: 400px;
+        height: 70px;
+    }
+    
+    
+    
+    
+    .bar-content{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        
+    }
+    
+    .bar-content p{
+        margin: 0px 15px;
+    }
+    
+    
+    
+    
+    .bar-graph{
+        height: 50px;
+        width: 40px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    .bar:nth-child(1){
+        width: 8px;
+        height: 40px;
+        background: #7d5fff;
+        margin: 0px 2px;
+    }
+    .bar:nth-child(2){
+        width: 8px;
+        height: 20px;
+        background: #7d5fff;
+        margin: 0px 2px;
+    }
+    .bar:nth-child(3){
+        width: 8px;
+        height: 50px;
+        background: #7d5fff;
+        margin: 0px 2px;
+    }
+    .bar:nth-child(4){
+        width: 8px;
+        height: 10px;
+        background: #7d5fff;
+        margin: 0px 2px;
+    }
+    
+    #midcontent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 150px;
+        right: 0;
+        width: 80.5%;
+        height: 290px;
+        padding: 0px 25px;
+        
+       
+    }
+    
+    #profilecard{
+        width: 30%;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 6px;
+        box-shadow: -2px 4px 20px rgb(115, 114, 114);
+    
+    }
+    
+    #image{
+        width: 120px;
+        height: 120px;
+        background: url(https://png.pngtree.com/png-vector/20201026/ourlarge/pngtree-cute-little-male-doctor-png-image_2374985.jpg);
+        background-size: cover;
+        border-radius: 50%;
+        margin-bottom: 5px;  
+    }
+    
+    #profilecard h2{
+        font-family: 'Secular One', sans-serif;
+        font-weight: 300;
+    
+    }
+    
+    #profilecard p{
+        margin-top: -10px;
+    }
+    
+    #followbtn{
+        
+        color: white;
+        width: 100px;
+        height: 31px;
+        border: none;
+        background-color: #368ef9;
+        border-radius: 6px;
+    }
+    
+    
+    #msg{
+        color: grey;
+        width: 100px;
+        height: 31px;
+        background-color: white;
+        border-radius: 6px;
+        border: 1px solid grey;
+    }
+    
+    #follow{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 220px;
+    
+    }
+    
+    #ratio{
+        position: absolute;
+        right: 0;
+        width: 65%;
+        top: 0px;
+        height: 90px;
+        padding: 0px 30px;
+        border-radius: 6px;
+        background-color: white;
+        box-shadow: -2px 4px 20px rgb(115, 114, 114);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    
+    }
+    
+    .d{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    
+    .d h3{
+        font-size: 20px;
+        margin: 0px 5px;
+    }
+    
+    .d p{
+        font-size: 12px;
+        margin: 0px 5px;
+    }
+    
+    #circle{
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+        width: 65%;
+        height: 185px;
+        padding: 0px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        border-radius: 4px;
+    
+    }
+    
+    .c{
+        background: #fff;
+        width: 180px;
+        height: 180px;
+        margin: 0px 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 6px;
+        box-shadow: -2px 4px 20px rgb(115, 114, 114);
+    
+    }
+    
+    #profileevents{
+        display: flex ;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    
+    .box{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    
+    }
+    
+    .box .percent{
+        position: relative;
+        width: 100px;
+        height: 100px;
+    
+    }
+    
+    
+    .box .percent svg{
+        position: relative;
+        width: 100px;
+        transform: rotate(-90deg);
+        height: 100px;
+    
+    }
+    
+    .box .percent svg circle{
+        width: 100px;
+        height: 100px;
+        fill: none;
+        stroke-width: 6;
+        stroke: #000;
+        transform: translate(5px, 5px);
+        
+        stroke-dasharray: 240;
+        stroke-dashoffset: 240;
+    }
+    
+    .box .percent svg circle:nth-child(1){
+        stroke-dashoffset: 0;
+        stroke: #e3e3e3;
+    }
+    
+    .box .percent svg circle:nth-child(2){
+        stroke-dashoffset: calc(240 - ( 240 * 22 ) / 100);
+        stroke: #df6969;
+    }
+    
+    
+    .box .percent .number {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #df6969;
+    
+    }
+    
+    .box2{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    
+    }
+    
+    .box2 .percent{
+        position: relative;
+        width: 100px;
+        height: 100px;
+    
+    }
+    
+    
+    .box2 .percent svg{
+        position: relative;
+        width: 100px;
+        transform: rotate(-90deg);
+        height: 100px;
+    
+    }
+    
+    .box2 .percent svg circle{
+        width: 100px;
+        height: 100px;
+        fill: none;
+        stroke-width: 6;
+        stroke: #000;
+        transform: translate(5px, 5px);
+        
+        stroke-dasharray: 240;
+        stroke-dashoffset: 240;
+    }
+    
+    .box2 .percent svg circle:nth-child(1){
+        stroke-dashoffset: 0;
+        stroke: #e3e3e3;
+    }
+    
+    .box2 .percent svg circle:nth-child(2){
+        stroke-dashoffset: calc(240 - ( 240 * 78 ) / 100);
+        stroke: #df6969;
+    }
+    
+    
+    .box2 .percent .number {
+        position: absolute;
+        top: 15px;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #df6969;
+    
+    }
+    
+    
+    .box3{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    
+    }
+    
+    .box3 .percent{
+        position: relative;
+        width: 100px;
+        height: 100px;
+    
+    }
+    
+    
+    .box3 .percent svg{
+        position: relative;
+        width: 100px;
+        transform: rotate(-90deg);
+        height: 100px;
+    
+    }
+    
+    .box3 .percent svg circle{
+        width: 100px;
+        height: 100px;
+        fill: none;
+        stroke-width: 6;
+        stroke: #000;
+        transform: translate(5px, 5px);
+        
+        stroke-dasharray: 240;
+        stroke-dashoffset: 240;
+    }
+    
+    .box3 .percent svg circle:nth-child(1){
+        stroke-dashoffset: 0;
+        stroke: #e3e3e3;
+    }
+    
+    .box3 .percent svg circle:nth-child(2){
+        stroke-dashoffset: calc(240 - ( 240 * 66 ) / 100);
+        stroke: #df6969;
+    }
+    
+    
+    .box3 .percent .number {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #df6969;
+    
+    }
+    
+    
+    .box4{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    
+    }
+    
+    .box4 .percent{
+        position: relative;
+        width: 100px;
+        height: 100px;
+    
+    }
+    
+    
+    .box4 .percent svg{
+        position: relative;
+        width: 100px;
+        transform: rotate(-90deg);
+        height: 100px;
+    
+    }
+    
+    .box4 .percent svg circle{
+        width: 100px;
+        height: 100px;
+        fill: none;
+        stroke-width: 6;
+        stroke: #000;
+        transform: translate(5px, 5px);
+        
+        stroke-dasharray: 240;
+        stroke-dashoffset: 240;
+    }
+    
+    .box4 .percent svg circle:nth-child(1){
+        stroke-dashoffset: 0;
+        stroke: #e3e3e3;
+    }
+    
+    .box4 .percent svg circle:nth-child(2){
+        stroke-dashoffset: calc(240 - ( 240 * 50 ) / 100);
+        stroke: #df6969;
+    }
+    
+    
+    .box4 .percent .number {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #df6969;
+    
+    }
+    
+    
+    
+    
+    #lastcontent{
+        position: absolute;
+        top: 320px;
+        height: 850px;
+        width: 97.5%;
+        display: flex;
+        justify-content: space-between;
+        align-items:center ;
+        flex-direction: row;
+    }
+    
+    
+    
+    #content-info{
+        height: inherit;
+        width: 29.5%;
+        padding: 24px;
+        border-radius: 6px;
+        background: #fff;
+        overflow-x: hidden;
+        box-shadow: -2px 4px 20px rgb(115, 114, 114);
+    
+    }
+    
+    #content-form{
+        height: inherit;
+        width: 65.5%;
+    }
+    
+    
+    
+    #info-bar{
+        width: 100%;
+        height: 8%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    
+    #info-bar h4{
+        padding: 0px;
+        margin: 0px 0px ;
+        font-size: 20px;
+    }
+
+    iframe{
+        position: relative;
+        left: -24px;
+    }
+    
+    
+    .social a{
+    
+        text-decoration: none;
+        color: grey;
+        margin-left: 15px;
+    
+    }
+    
+    .social{
+        margin-top: 15px;
+    }
+    
+    
+    #buttons{
+        height: 9%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        padding: 2px 10px;
+        background: #fff;
+        border-radius: 6px;
+        box-shadow: -2px 4px 20px rgb(115, 114, 114);
+    
+    }
+    
+    .basic{
+        border: 0.5px solid gray;
+        width: 100px;
+        height: 35px;
+        color: grey;
+        background: white;
+        margin: 0px 10px;
+        border-radius: 20px;
+        transition: 0.8s ease-in-out;
+    }
+    
+    .basic:hover{
+        border: none;
+        width: 80px;
+        height: 35px;
+        color: #fff;
+        background: #00cec9;
+        margin: 0px 10px;
+        border-radius: 20px;
+    }
+    
+    #last-form{
+        
+        border-radius: 6px;
+        box-shadow: -2px 4px 20px rgb(115, 114, 114);
+        width: 65.5%;
+        height: 84%;
+        background-color: white;
+        position: absolute;
+        bottom: 5%;
+        padding-left: 20px;
+    }
+    
+    #basi h4{
+        font-size: 20px;
+        margin-top: 10px;
+        font-weight: 400;
+    }
+    
+    #firstname{
+        width: 96%;
+        border: 2px solid gray;
+        color: #000;
+    }
+    
+    #lastname{
+        width: 96%;
+        border: 2px solid gray;
+        margin-top: 20px;
+    }
+    
+    #male{
+        margin-top: 20px;
+        font-weight: 900;
+    }
+    
+    #date{
+        margin-top: 20px;
+        width: 96%;
+    }
+    
+    #urrl{
+        margin-top: 20px;
+        width: 96%;
+        border: 2px solid gray;
+    }
+    
+    #address1{
+        margin-top: 20px;
+        width: 96%;
+        border: 2px solid gray;
+    }
+    
+    #address2{
+        margin-top: 20px;
+        width: 96%;
+        border: 2px solid gray;
+    }
+    
+    #city{
+        margin-top: 20px;
+        width: 96%;
+        border: 2px solid gray;
+    }
+    
+    #state{
+        margin-top: 20px;
+        width: 96%;
+        border: 2px solid gray;
+    }
+    
+    #country{
+        margin-top: 20px;
+        width: 96%;
+        border: 2px solid gray;
+    }
+    
+    
+    #update{
+        
+        color: white;
+        width: 100px;
+        height: 31px;
+        border: none;
+        background-color: #368ef9;
+        border-radius: 6px;
+    }
+    
+    
+    #canc{
+        color: grey;
+        width: 100px;
+        height: 31px;
+        background-color: white;
+        border-radius: 6px;
+        border: 1px solid grey;
+    }
+    
+    #updatebtn{
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 220px;
+    
+    }
+    
+    input{
+        border-radius: 6px;
+        padding: 5px 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
